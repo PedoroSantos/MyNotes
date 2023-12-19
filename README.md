@@ -1,2 +1,2 @@
-# VapeShop
+# MyNotes
  Vite + React Project
