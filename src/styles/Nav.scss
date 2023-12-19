@@ -1,0 +1,27 @@
+@import "./Main.scss";
+
+nav {
+  width: 100%;
+  @include flex-row-center;
+  & button {
+    padding: 1em;
+    font-size: 22px;
+    margin: 15px;
+    border: none;
+    background-color: $mediumcolor1;
+    border-radius: 25px;
+
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $lightcolor3;
+  }
+  & .nav-content {
+    padding: 0em 5em;
+    background-color: $darkcolor1;
+    border-radius: 40px;
+    border: 1px solid $lightcolor2;
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.26);
+    box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.26);
+  }
+}
