@@ -5,12 +5,22 @@ import App from './App.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Nav from './components/Nav.jsx'
-
-const router = createBrowserRouter({
+import Write from './components/Routes/Write.jsx'
+import List from './components/Routes/List.jsx'
+import Favorites from './components/Routes/Favorites.jsx'
+const router = createBrowserRouter([{
+  path:"/write",
+  element: <Write></Write>,
+},{
   path:"/",
-  element: <App></App>
-
-})
+  element: <List></List>,
+},{
+  path:"/favorites",
+  element: <Favorites></Favorites>,
+},{
+  path:"/write",
+  element: <Write></Write>,
+},])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
