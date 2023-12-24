@@ -1,0 +1,57 @@
+@import "./Main.scss";
+
+.text-writable{
+    height: 100vh;
+    background-color: $mediumcolor1;
+    padding: 2.5em;
+    border-radius: 10px;
+    font-size: 18px;
+    &:focus{
+        outline: $lightcolor1 2px solid;
+    }
+}
+
+.write-effects,.finish{
+    margin-right: 15%;
+    margin-left: 95%;
+    margin-top: 20em;
+    position:fixed;
+    color: white;
+    z-index: 1;
+    padding: .1em;
+    background-color: $darkcolor1;
+    border-radius: 20px;
+    box-shadow: 2px 2px 7px 5px rgba(0,0,0,0.26);
+    @include flex-column-center;
+    & button{
+       padding: .8em 1em; 
+    }
+}
+.finish{
+    margin-top: 45em;
+    & button{
+        padding: .8em 1em; 
+     }  
+}
+.text-title{
+    transition: .6s ease-in;
+    color: white;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 40px;
+    margin-top: -50px;
+    text-align: center;
+    border-bottom: 2px solid $lightcolor1;
+    padding: .3em 0;
+    &:focus{
+        outline: none;
+        border-bottom: 2px solid white;
+    }
+
+}
+.counter{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.415);
+    text-align: right;
+    margin: .5em;
+}

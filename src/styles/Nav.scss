@@ -10,10 +10,15 @@ nav {
     border: none;
     background-color: $mediumcolor1;
     border-radius: 25px;
-
     font-weight: 700;
     letter-spacing: 1px;
     color: $lightcolor3;
+    cursor: pointer;
+    transition: .5s ease;
+    &:hover{
+      background-color: $darkcolor2;
+    }
+
   }
   & .nav-content {
     padding: 0em 5em;
