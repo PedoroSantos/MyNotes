@@ -3,30 +3,67 @@
 nav {
   width: 100%;
   @include flex-row-center;
-  & button {
-    padding: 1em;
-    font-size: 22px;
-    margin: 15px;
-    border: none;
-    background-color: $mediumcolor1;
-    border-radius: 25px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: $lightcolor3;
-    cursor: pointer;
-    transition: .5s ease;
-    &:hover{
-      background-color: $darkcolor2;
-    }
-
-  }
   & .nav-content {
+    @include flex-row-center;
+    width: 30%;
     padding: 0em 5em;
     background-color: $darkcolor1;
     border-radius: 40px;
     border: 1px solid $lightcolor2;
-    -webkit-box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.26);
-    -moz-box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.26);
-    box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.26);
+    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.26);
+    & .buttons {
+      width: 60%;
+      @include flex-row-center;
+    }
+    & button {
+      @include flex-row-center;
+      justify-content: space-around;
+      gap: 10px;
+      width: 100%;
+      height: 75px;
+      padding: 4% 8%;
+      font-size: 20px;
+      margin: 0.8em 5%;
+      border: none;
+      background-color: $mediumcolor1;
+      border-radius: 25px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: $lightcolor3;
+      cursor: pointer;
+      transition: 0.5s ease;
+      &:hover {
+        background-color: $darkcolor2;
+        color: white;
+      }
+    }
   }
 }
+
+@media (max-width: 987px) {
+  nav {
+    & .nav-content {
+      & button {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media (max-width: 784px) {
+  nav {
+    & .nav-content {
+      & button{
+        padding: 1.5em;
+      }
+      & .buttontext {
+        display: none;
+      }
+      & i{
+        font-size: 28px;
+      }
+    }
+  }
+}
+

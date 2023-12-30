@@ -11,7 +11,24 @@
     }
 }
 
+
 .write-effects,.finish{
+    & button{
+        cursor: pointer;
+        transition: .6s ease;
+        width: 100%;
+        color: white;
+        opacity: .7;
+        font-size: 20px;
+        background-color: $darkcolor1;
+        padding: 2em;
+        border-radius: 20px;
+        border: none;
+        &:hover{
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.237);
+        }
+    }
     margin-right: 15%;
     margin-left: 95%;
     margin-top: 20em;
@@ -31,7 +48,18 @@
     margin-top: 45em;
     & button{
         padding: .8em 1em; 
+        transition:.2s;
+        &:hover{
+            background-color: rgba(75, 147, 64, 0.644);
+            outline: 2px solid rgba(200, 248, 193, 0.644);
+        }
+        &:disabled{
+            cursor: not-allowed;
+            background-color: $darkcolor2;
+            opacity: .7;
+        }
      }  
+     
 }
 .text-title{
     transition: .6s ease-in;
@@ -54,4 +82,70 @@
     color: rgba(255, 255, 255, 0.415);
     text-align: right;
     margin: .5em;
+}
+.boldtext{
+    font-weight: 800;
+}
+@media (max-width:800px){
+    .text-writable{
+        width: 80vw;
+        transform: translateX(-160px);
+    }
+    .write-effects,.finish{
+        transform: translateX(30px);
+    }
+    .counter{
+       transform: translateX(-140px); 
+    }
+}
+@media (max-width:691px){
+    .text-writable{
+        width: 75vw;
+        transform: translateX(-160px);
+    }
+    .write-effects,.finish{
+        transform: translateX(20px);
+    }
+    .counter{
+       transform: translateX(-140px); 
+    }
+    .text-title{
+        transform: translateX(-110px);
+        width: 75vw;
+    }
+}
+@media (max-width:560px){
+    .text-writable{
+        width: 70vw;
+        transform: translateX(-160px);
+    }
+    .write-effects,.finish{
+        transform: translateX(10px);
+    }
+    .counter{
+       transform: translateX(-140px); 
+    }
+    .text-title{
+        transform: translateX(-110px);
+        width: 75vw;
+    }
+}
+@media (max-width:427px){
+    .text-writable{
+        width: 62vw;
+        transform: translateX(-160px);
+    }
+    .write-effects,.finish{
+        transform: translateX(2px);
+        & button{
+            font-size: 18px;
+        }
+    }
+    .counter{
+       transform: translateX(-140px); 
+    }
+    .text-title{
+        transform: translateX(-110px);
+        width: 66vw;
+    }
 }
