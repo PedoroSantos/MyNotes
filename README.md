@@ -1,6 +1,7 @@
 # MyNotes
-
+> ![Clique aqui para testar no seu navegador](https://notes-neon-nu.vercel.app)
 Este é um aplicativo de bloco de notas feito com React, Vite e Sass. Você pode criar, editar, favoritar e apagar notas. As notas são salvas na memória do navegador, então elas não serão perdidas se você atualizar a página.
+
 
 ## Como usar
 
@@ -10,6 +11,7 @@ Para usar este aplicativo, você precisa ter o Node.js instalado na sua máquina
 - Abra um terminal na pasta do projeto e execute `npm install` para instalar as dependências.
 - Execute `npm run dev` para iniciar o servidor de desenvolvimento.
 - Abra o navegador e acesse `http://localhost:3000` para ver o aplicativo em ação.
+  
 
 ## Recursos
 
