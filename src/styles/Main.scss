@@ -21,6 +21,9 @@ $regularcolor: #7897FF;
     align-items: center;
     display: flex;
 }
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
 body{
     background-color: $darkcolor2;
     font-family: "Inter", sans-serif;
