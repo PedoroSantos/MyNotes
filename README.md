@@ -33,6 +33,3 @@ Este aplicativo tem algumas limitações que você deve estar ciente:
 - Este aplicativo não tem um backend, então ele não pode sincronizar as notas com outros dispositivos ou usuários.
 - Este aplicativo pode ter alguns bugs ou erros que não foram detectados ou corrigidos. Se você encontrar algum, por favor, reporte na seção de issues do repositório.
 
-## Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
