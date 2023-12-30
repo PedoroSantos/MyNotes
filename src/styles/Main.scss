@@ -27,14 +27,6 @@ html {
 body{
     background-color: $darkcolor2;
     font-family: "Inter", sans-serif;
-    ::selection{
-        display: none;
-    }
-    & button{
-        ::selection{
-            display: none;
-        }
-    }
 }
 .app-content{
     padding: 5em 10em;
