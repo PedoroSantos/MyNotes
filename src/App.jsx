@@ -88,6 +88,14 @@ function App() {
             path="/edit/:id"
             element={<Edit Notes={Notes} UpdateNote={UpdateNote} />}
           />
+          <Route
+            path="*"
+            element={<List
+              itens={Notes}
+              DeleteNote={DeleteNote}
+              setFavorite={setFavorite}
+            />}
+          />
         </Routes>
       </div>
     </Router>
